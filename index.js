@@ -44,6 +44,17 @@
 //   exerciseRoutine(liftWeights);
 // }
 
+// Monday();
+
+// exerciseRoutine(function () {
+//   console.log('Stretch! Work that core!');
+// });
+
+// exerciseRoutine(() => {
+//   console.log('Stretch! Work that core!')
+// });
+
+// exerciseRoutine(() => console.log('Stretch! Work that core!'));
 
 
 
@@ -90,14 +101,7 @@
 
 
 
-
-
-
-
-
-
-
-function receivesAFunction (cb) {
+function receivesAFunction(cb) {
   return cb();
 }
 
@@ -108,7 +112,12 @@ function namedFunction() {
 function returnsANamedFunction() {
   return namedFunction;
 }
+// // **** BELOW DID NOT PASS****
+// // const returnsAnAnonymousFunction = function() {
+// //   returns function(anonymous);
+// // }
 
-// const returnsAnAnonymousFunction = function() {
-//   returns function(anonymous);
-// }
+returnsAnAnonymousFunction(() => console.log('hello'));
+
+
+
